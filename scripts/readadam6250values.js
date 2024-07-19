@@ -1,6 +1,7 @@
 document.getElementById("testRequest").addEventListener("click", () => {
     // Proxy service URL
-    const proxyUrl = "https://cors-anywhere.herokuapp.com/"; // CORS proxy service
+    // const proxyUrl = "https://cors-anywhere.herokuapp.com/"; // CORS proxy service?
+    const proxyUrl = "https://api.allorigins.win/get?url="
   
     // Target URL (replace with your endpoint URL)
     const targetUrl = "http://90.54.44.103:8081/digitalinput/all/value";
