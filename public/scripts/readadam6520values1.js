@@ -1,5 +1,5 @@
 document.getElementById("testRequest").addEventListener("click", () => {
-    fetch('https://your-site.netlify.app/.netlify/functions/proxy')
+    fetch('https://adam6250.netlify.app/.netlify/functions/proxy')
       .then(response => response.text())
       .then(text => {
         document.getElementById("response").textContent = text;
