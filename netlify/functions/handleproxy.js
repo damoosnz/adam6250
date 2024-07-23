@@ -3,7 +3,8 @@ exports.handler = async function(event) {
 
   // const proxyUrl = "http://90.54.44.103:8081/digitalinput/all/value"; // livebox home
   // const proxyUrl = "http://92.184.108.23:8081/digitalinput/all/value"; // tplink router 92.184.108.23 temp ip
-  const proxyUrl = "http://10.135.155.26:8081/digitalinput/all/value";// 10.135.155.26
+  // const proxyUrl = "http://10.135.155.26:8081/digitalinput/all/value";// 10.135.155.26 10.139.145.230 
+  const proxyUrl = "http://bimscrouter1.tplinkdns.com:8081/digitalinput/all/value";// bimscrouter1.tplinkdns.com
   const username = "root";
   const password = "00000000";
   const credentials = Buffer.from(username + ":" + password).toString('base64');
