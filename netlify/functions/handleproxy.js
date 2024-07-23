@@ -2,7 +2,7 @@ exports.handler = async function(event) {
   const fetch = (await import('node-fetch')).default;
 
   // const proxyUrl = "http://90.54.44.103:8081/digitalinput/all/value"; // livebox home
-  const proxyUrl = "http://92.184.110.152:8081/digitalinput/all/value"; // tplink router 192.184.110.152
+  const proxyUrl = "http://92.184.108.23:8081/digitalinput/all/value"; // tplink router 92.184.108.23
   const username = "root";
   const password = "00000000";
   const credentials = Buffer.from(username + ":" + password).toString('base64');
