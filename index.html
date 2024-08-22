@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTTP Request Test</title>
+    <title>Read Values from Adam 6250 Modules</title>
     <script src="./public/scripts/readadam6520values1.js" defer></script>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js" defer></script>
+    <script src="./public/scripts/readadam6250mqtt.js" defer></script> <!-- Link to your JS file -->
 </head>
+
 <body>
-    <h1>HTTP Request Test</h1>
-    <button id="testRequest">Test Request</button>
-    <div id="response"></div>
+    <div>
+        <h1>HTTP Request Test</h1>
+        <button id="testRequest">Test Request</button>
+        <div id="response"></div>
+    </div>
+
+    <div>
+        <h1>MQTT Listener</h1>
+        <button id="startBtn">Start Listening</button>
+        <button id="stopBtn">Stop Listening</button>
+        <div id="dataDisplay"></div>
+    </div>
 </body>
+
 </html>
