@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     startBtn.addEventListener('click', () => {
         if (!client) {
-            client = mqtt.connect('ws://test.mosquitto.org:8080/mqtt'); // Use WebSocket for browser
+            client = mqtt.connect('wss://test.mosquitto.org:8080/mqtt'); // Use WebSocket for browser
 
             client.on('connect', () => {
                 console.log('Connected to MQTT broker');
